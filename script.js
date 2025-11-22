@@ -126,9 +126,6 @@ function logout() {
     showLogin();
 }
 
-// ========================================
-// DARK MODE
-// ========================================
 
 function toggleTheme() {
     document.body.classList.toggle('dark-mode');
@@ -143,9 +140,7 @@ function loadTheme() {
     }
 }
 
-// ========================================
-// CREATE POST
-// ========================================
+
 
 function createPost() {
     const text = document.getElementById('postText').value.trim();
@@ -177,9 +172,7 @@ function createPost() {
     showPosts();
 }
 
-// ========================================
-// SHOW POSTS
-// ========================================
+
 
 function showPosts() {
     const feed = document.getElementById('feed');
@@ -248,9 +241,7 @@ function getTimeAgo(timestamp) {
     return date.toLocaleDateString();
 }
 
-// ========================================
-// LIKE SYSTEM
-// ========================================
+
 
 function toggleLike(postId) {
     const post = posts.find(p => p.id === postId);
