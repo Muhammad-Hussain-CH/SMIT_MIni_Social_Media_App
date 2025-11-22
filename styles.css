@@ -5,19 +5,6 @@
     box-sizing: border-box;
 }
 
-/* ========== COLORS ========== */
-:root {
-    --bg-primary: #f0f2f5;
-    --bg-secondary: #ffffff;
-    --text-primary: #050505;
-    --text-secondary: #65676b;
-    --border-color: #e4e6eb;
-    --accent-color: #1877f2;
-    --accent-hover: #166fe5;
-    --like-color: #e41e3f;
-    --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-    --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.12);
-}
 
 /* Dark Mode Colors */
 body.dark-mode {
@@ -103,6 +90,20 @@ body {
     background-clip: text;
     font-size: 2rem;
     font-weight: 700;
+}
+
+/* ========== COLORS ========== */
+:root {
+    --bg-primary: #f0f2f5;
+    --bg-secondary: #ffffff;
+    --text-primary: #050505;
+    --text-secondary: #65676b;
+    --border-color: #e4e6eb;
+    --accent-color: #1877f2;
+    --accent-hover: #166fe5;
+    --like-color: #e41e3f;
+    --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .auth-box p {

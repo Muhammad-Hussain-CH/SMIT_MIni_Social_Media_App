@@ -39,10 +39,7 @@ function saveData() {
     }
 }
 
-// ========================================
-// LOGIN & SIGNUP
-// ========================================
-
+//Login & Signup
 // Check if user is already logged in
 function checkLogin() {
     if (currentUser) {
