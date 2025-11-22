@@ -1,18 +1,11 @@
-/* ========================================
-   SMIT SOCIAL MEDIA APP - JAVASCRIPT
-   ======================================== */
 
-// Global Variables
-let posts = [];
+let posts = [];  // variables  (Global )
 let users = [];
 let currentUser = null;
 
-// Start the app when page loads
+
 init();
 
-// ========================================
-// INITIALIZATION
-// ========================================
 
 function init() {
     loadData();
@@ -20,7 +13,7 @@ function init() {
     loadTheme();
 }
 
-// Load saved data from browser storage
+// Load saved data form the local storage
 function loadData() {
     const savedUsers = localStorage.getItem('smit_users');
     const savedPosts = localStorage.getItem('smit_posts');
@@ -37,7 +30,7 @@ function loadData() {
     }
 }
 
-// Save all data to browser storage
+// Save  data to local  storageeee
 function saveData() {
     localStorage.setItem('smit_users', JSON.stringify(users));
     localStorage.setItem('smit_posts', JSON.stringify(posts));
