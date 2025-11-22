@@ -96,7 +96,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const email = document.getElementById('loginEmail').value.trim();
     const password = document.getElementById('loginPassword').value;
 
-    // Find user with matching email and password
+    // Find user wth matching email and password
     const user = users.find(u => u.email === email && u.password === password);
     
     if (user) {
