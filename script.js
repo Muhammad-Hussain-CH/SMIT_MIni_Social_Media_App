@@ -263,9 +263,7 @@ function toggleLike(postId) {
     }
 }
 
-// ========================================
-// DELETE POST
-// ========================================
+
 
 let postToDelete = null;
 
@@ -288,9 +286,7 @@ function confirmDelete() {
     }
 }
 
-// ========================================
-// EDIT POST
-// ========================================
+
 
 let postToEdit = null;
 
@@ -328,26 +324,21 @@ function saveEdit() {
     }
 }
 
-// ========================================
-// SEARCH
-// ========================================
+
 
 function searchPosts() {
     showPosts();
 }
 
-// ========================================
-// SORT POSTS
-// ========================================
 
 function sortPosts(type) {
-    // Update active button
+    
     document.querySelectorAll('.filter-btn').forEach(btn => {
         btn.classList.remove('active');
     });
     event.target.classList.add('active');
 
-    // Sort posts
+    
     if (type === 'latest') {
         posts.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
     } else if (type === 'oldest') {
